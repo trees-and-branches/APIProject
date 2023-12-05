@@ -27,6 +27,7 @@ class StateRepTableViewCell: UITableViewCell {
     func update(with stateRep: StateRep) {
         nameLabel.text = stateRep.name
         partyLabel.text = stateRep.party
+        print(stateRep.phone)
         phoneNumberLabel.text = stateRep.phone
     }
 

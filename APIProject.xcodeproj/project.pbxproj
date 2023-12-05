@@ -18,6 +18,8 @@
 		EA9BDF5F2B1E3C24003D6DE4 /* StateRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9BDF5E2B1E3C24003D6DE4 /* StateRep.swift */; };
 		EA9BDF612B1E6E83003D6DE4 /* StateRepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9BDF602B1E6E83003D6DE4 /* StateRepController.swift */; };
 		EA9BDF632B1E7A22003D6DE4 /* StateRepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9BDF622B1E7A22003D6DE4 /* StateRepTableViewCell.swift */; };
+		EA9BDF652B1F7B3B003D6DE4 /* NobelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9BDF642B1F7B3B003D6DE4 /* NobelViewController.swift */; };
+		EA9BDF682B1F7C51003D6DE4 /* testItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9BDF672B1F7C51003D6DE4 /* testItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EA9BDF5E2B1E3C24003D6DE4 /* StateRep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRep.swift; sourceTree = "<group>"; };
 		EA9BDF602B1E6E83003D6DE4 /* StateRepController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRepController.swift; sourceTree = "<group>"; };
 		EA9BDF622B1E7A22003D6DE4 /* StateRepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRepTableViewCell.swift; sourceTree = "<group>"; };
+		EA9BDF642B1F7B3B003D6DE4 /* NobelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelViewController.swift; sourceTree = "<group>"; };
+		EA9BDF672B1F7C51003D6DE4 /* testItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,11 +54,10 @@
 		EA9BDF362B1E25CC003D6DE4 = {
 			isa = PBXGroup;
 			children = (
-				EA9BDF622B1E7A22003D6DE4 /* StateRepTableViewCell.swift */,
+				EA9BDF672B1F7C51003D6DE4 /* testItems.swift */,
+				EA9BDF662B1F7B68003D6DE4 /* view */,
 				EA9BDF602B1E6E83003D6DE4 /* StateRepController.swift */,
 				EA9BDF5E2B1E3C24003D6DE4 /* StateRep.swift */,
-				EA9BDF5C2B1E3A3C003D6DE4 /* StateRepViewController.swift */,
-				EA9BDF5A2B1E2CDB003D6DE4 /* DogViewController.swift */,
 				EA9BDF562B1E26F2003D6DE4 /* Dog.swift */,
 				EA9BDF412B1E25CC003D6DE4 /* APIProject */,
 				EA9BDF402B1E25CC003D6DE4 /* Products */,
@@ -80,6 +83,17 @@
 				EA9BDF502B1E25CE003D6DE4 /* Info.plist */,
 			);
 			path = APIProject;
+			sourceTree = "<group>";
+		};
+		EA9BDF662B1F7B68003D6DE4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EA9BDF642B1F7B3B003D6DE4 /* NobelViewController.swift */,
+				EA9BDF5A2B1E2CDB003D6DE4 /* DogViewController.swift */,
+				EA9BDF5C2B1E3A3C003D6DE4 /* StateRepViewController.swift */,
+				EA9BDF622B1E7A22003D6DE4 /* StateRepTableViewCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9BDF682B1F7C51003D6DE4 /* testItems.swift in Sources */,
+				EA9BDF652B1F7B3B003D6DE4 /* NobelViewController.swift in Sources */,
 				EA9BDF432B1E25CC003D6DE4 /* AppDelegate.swift in Sources */,
 				EA9BDF632B1E7A22003D6DE4 /* StateRepTableViewCell.swift in Sources */,
 				EA9BDF612B1E6E83003D6DE4 /* StateRepController.swift in Sources */,

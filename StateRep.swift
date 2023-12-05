@@ -15,6 +15,20 @@ struct StateRep: Decodable {
 struct StateRepResponse: Decodable {
     var results: [StateRep]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    enum CodingKeys: String, CodingKey {
 //            case results
 //    }

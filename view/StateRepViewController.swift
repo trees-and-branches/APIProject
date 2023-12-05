@@ -12,7 +12,7 @@ class StateRepViewController: UIViewController{
     @IBOutlet weak var stateRepsTableView: UITableView!
     
     var stateRepController = StateRepController()
-    var stateReps = [StateRep]()
+    var stateReps: [StateRep] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +23,21 @@ class StateRepViewController: UIViewController{
             do {
                 stateReps = try await stateRepController.fetchStateReps()
                 DispatchQueue.main.async {
-                    self.stateRepsTableView.reloadData()
+                    self.stateRepsTableView.reloadData() // Ensure this is on the main thread
                 }
             } catch {
-                print("Error fetching state representatives: \(error)")
+                print(error)
             }
         }
+
+        
     }
-    
 }
+
 
 extension StateRepViewController: UITableViewDataSource, UITableViewDelegate  {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(stateReps.count)
         return stateReps.count
     }
     
@@ -46,5 +49,15 @@ extension StateRepViewController: UITableViewDataSource, UITableViewDelegate  {
         
         return cell
     }
-    
 }
+
+//Task {
+//    do {
+//        stateReps = try await stateRepController.fetchStateReps()
+//        DispatchQueue.main.async {
+//            self.stateRepsTableView.reloadData() // Ensure this is on the main thread
+//        }
+//    } catch {
+//        print(error)
+//    }
+//}
